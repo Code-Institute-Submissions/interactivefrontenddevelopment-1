@@ -28,4 +28,43 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+}
+
+.weatherimage {
+    padding: 5px;
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+}
+
+.weatherlocation {
+  height: 30vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.weathertemperature {
+  height: 30vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.weatherstatus {
+  height: 30vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.fivedayforecast {
+  height: 30vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
 }
