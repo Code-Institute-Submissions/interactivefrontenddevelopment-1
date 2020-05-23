@@ -1,6 +1,11 @@
 window.addEventListener('load', ()=> {
     let longtitudecoords;
     let latitudecoords;
+    
+    let weatherTemperature = document.querySelector(".h_two_weathertemperature");
+    let weatherHumidity = document.querySelector(".h_two_weatherstatus");
+    let weatherLocation = document.querySelector(".h_two_weatherlocation");
+    
 
     if (navigator.geolocation){
         navigator.geolocation.getCurrentPosition
@@ -15,6 +20,13 @@ window.addEventListener('load', ()=> {
                 })
                 .then(data => {
                     console.log(data);
+                    const { temp, temp_max, temp_min, humidity } = data.main;
+                    const { deg, gust, speed } = data.wind;
+                    
+                    weatherTemperature.textContent = temp;
+                    weatherHumidity.textContent = humidity;
+                    weatherLocation.textContent = data.name;
+                   
                 });
 
         });
