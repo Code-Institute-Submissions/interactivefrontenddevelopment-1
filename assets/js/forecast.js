@@ -14,28 +14,33 @@ function setQuery(evt) {
 }
 
 function getResults (query) {
-    fetch(`${api.baseurl}weather?q=${query}&units=metric&APPID=${api.key}`)
-    .then(weather => {
-        return weather.json();
+    fetch(`${api.baseurl}forecast?q=${query}&units=metric&APPID=${api.key}`)
+    .then(forecast => {
+        return forecast.json();
     }).then(displayResults);
 }
 
-function displayResults (weather) {
-    console.log(weather);
+function displayResults (forecast) {
+    console.log(forecast);
 
     let city = document.querySelector('.location .city');
-    city.innerText = `${weather.name}, ${weather.sys.country}`;
+    city.innerText = `${forecast.city.name}, ${forecast.city.country}`;
 
-    let temp = document.querySelector('.current .temp');
-    temp.innerText = `${weather.main.temp}`;
+    let day1 = document.querySelector('.forecast .day1');
+    day1.innerText = `${forecast.list[6].dt_txt}, ${forecast.list[6].main.temp}, ${forecast.list[6].weather[0].description} `;
 
-    let weatherstatus = document.querySelector('.current .weather');
-    weatherstatus.innerText = `${weather.weather[0].main}`;
+    let day2 = document.querySelector('.forecast .day2');
+    day2.innerText = `${forecast.list[14].dt_txt}, ${forecast.list[14].main.temp}, ${forecast.list[14].weather[0].description} `;
 
 
-    let hilo = document.querySelector('.hi-low');
-    hilo.innerText = `${weather.main.temp_min} / ${weather.main.temp_max}`;
+    let day3 = document.querySelector('.forecast .day3');
+    day3.innerText = `${forecast.list[22].dt_txt}, ${forecast.list[22].main.temp}, ${forecast.list[22].weather[0].description} `;
 
+    let day4 = document.querySelector('.forecast .day4');
+    day4.innerText = `${forecast.list[30].dt_txt}, ${forecast.list[30].main.temp}, ${forecast.list[30].weather[0].description} `;
+
+    let day5 = document.querySelector('.forecast .day5');
+    day5.innerText = `${forecast.list[38].dt_txt}, ${forecast.list[38].main.temp}, ${forecast.list[38].weather[0].description} `;
 
     
 
