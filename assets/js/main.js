@@ -21,7 +21,7 @@ window.addEventListener('load', ()=> {
             longtitudecoords = postion.coords.longitude;
             latitudecoords = postion.coords.latitude;
         
-            const api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitudecoords}&lon=${longtitudecoords}&appid=73758c02ea981f5a32c0ab44ef2f4078`;
+            const api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitudecoords}&lon=${longtitudecoords}&units=metric&appid=73758c02ea981f5a32c0ab44ef2f4078`;
             fetch(api)
                 .then(response => {
                     return response.json();
@@ -41,7 +41,6 @@ window.addEventListener('load', ()=> {
                     weatherCountry.textContent = country;
                     weatherSunrise.textContent = sunrise;
                     weatherSunset.textContent = sunset;
-
                     weatherLocation.textContent = data.name;
 
                    
