@@ -12,7 +12,11 @@ window.addEventListener('load', ()=> {
     let weatherSunset = document.querySelector(".h_two_weathersunset");
     let weatherCountry = document.querySelector(".h_two_weathercountry");
 
-   
+
+    
+
+
+
     
 
     if (navigator.geolocation){
@@ -44,10 +48,12 @@ window.addEventListener('load', ()=> {
                     weatherLocation.textContent = data.name;
 
                    
+
                 });
 
         });
     }
 });
+
 
 /* Openweather API Key 73758c02ea981f5a32c0ab44ef2f4078 */

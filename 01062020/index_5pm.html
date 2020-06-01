@@ -40,7 +40,8 @@
           data-target="#navbarsExampleDefault"
           aria-controls="navbarsExampleDefault"
           aria-expanded="false"
-          aria-label="Toggle navigation">
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -48,7 +49,8 @@
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="index.html"
-                >Home <span class="sr-only">(current)</span></a>
+                >Home <span class="sr-only">(current)</span></a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="search.html">Location</a>
@@ -74,27 +76,18 @@
         </div>
       </nav>
 
-    
-
-      <main role="main" class="container">
-
-
-
-			
-            <!-- Jumbotron -->
-<div class="jumbotron p-0">
-
-
-
-  <!-- Card content -->
-  <div class="card-body text-center mb-3">
-
-    <!-- Title -->
-    <h3 class="card-title h3 my-4"><strong>Click "Allow Location Access" to see the weather in your area</strong></h3>
-
-
-    <div class="app-wrap">
-  
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm mainimage">
+              <img
+                src="/assets/images/sky.jpg"
+                class="img-rounded img-fluid"
+                alt="Cinque Terre"
+              />
+            </div>
+          </div>
+        </div>
 
         <div class="table-responsive">
           <table class="table table-hover">
@@ -192,15 +185,10 @@
               </tr>
             </tbody>
           </table>
-     </div>
-
-</div>
-<!-- Jumbotron -->
-
-  </div>
-</div>
-
-		</main><!-- /.container -->
+        </div>
+        <!-- Card content -->
+      </div>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

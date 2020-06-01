@@ -24,6 +24,11 @@ body, html {
   background-size: cover;
 }
 
+.jumbotron {
+  background-image: url("/assets/images/sky.jpg");
+  background-size: cover;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -41,25 +46,17 @@ body, html {
 }
 
 .weatherlocation {
-  height: 30vh;
-    width: 50%;
-    display: flex;
-    align-items: center;
+  
+
 }
 
 .weathertemperature {
-  height: 30vh;
-    width: 50%;
-    display: flex;
-    align-items: center;
+ 
     cursor: pointer;
 }
 
 .weatherstatus {
-  height: 30vh;
-    width: 50%;
-    display: flex;
-    align-items: center;
+ 
 }
 
 .fivedayforecast {
@@ -67,4 +64,18 @@ body, html {
     width: 50%;
     display: flex;
     align-items: center;
+}
+
+.table {
+   margin: auto;
+   width: 50% !important; 
+}
+
+.mainimage {
+    max-width: 20%;
+  height: auto;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }

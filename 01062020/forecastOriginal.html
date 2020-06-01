@@ -27,7 +27,7 @@
 
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
+					<li class="nav-item active">
 						<a class="nav-link" href="index.html">Home </a>
 					</li>
 					<li class="nav-item">
@@ -36,9 +36,6 @@
 					<li class="nav-item">
 						<a class="nav-link" href="contact.html">Contact</a>
 					</li>
-                    <li class="nav-item active">
-              <a class="nav-link" href="forecast.html">Forecast<span class="sr-only">(current)</span></a>
-            </li>
 
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
@@ -56,7 +53,14 @@
             <!-- Jumbotron -->
 <div class="jumbotron p-0">
 
-  
+  <!-- Card image -->
+  <div class="view overlay rounded-top">
+    <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(134).jpg" class="img-fluid" alt="Sample image">
+    <a href="#">
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+
   <!-- Card content -->
   <div class="card-body text-center mb-3">
 
@@ -65,72 +69,26 @@
 
 
     <div class="app-wrap">
-     <div class="table-responsive">
-          <table class="table table-hover">
-            <tbody>
-              <tr>
-                <th>
-                
     <header> 
     <input type="text" autocomplete="off" class="search-box" placeholder="Search Here..."/>
     </header>
-    </th>
-              </tr>
-
-              <tr>
-                <th>
     <section class="location">
-    <div class="city">Your Area</div>
+    <div class="city">ROSCOMMON</div>
+    <div class="date">Sunday, 24th May 2020</div>
     </section>
-     </th>
-              </tr>
-  
-    
-    <tr>
-                <th>
-                <div class="forecast">
-                <div class="day1">Today</div>
-                </div>
-                </th>
-              </tr>
-    
-     <tr>
-                <th>
-                <div class="forecast">
-                <div class="day2">Tomorrow</div>
-                </div>
-                </th>
-              </tr>
+<div class="current">
+<div class="temp">15<span>C</span></div>
+<div class="weather">Sunny</div>
+<div class="hi-low">13 / 16</div>
+</div>
+<div class="forecast">
+<div class="day1">day1</div>
+<div class="day2">day2</div>
+<div class="day3">day3</div>
+<div class="day4">day4</div>
+<div class="day5">day5</div>
 
-               <tr>
-                <th>
-                <div class="forecast">
-                <div class="day3">Next Day</div>
-                </div>
-                </th>
-              </tr>
-
-               <tr>
-                <th>
-                <div class="forecast">
-                <div class="day4">Day After</div>
-                </div>
-                </th>
-              </tr>
-
-               <tr>
-                <th>
-                <div class="forecast">
-                <div class="day5">Day After</div>
-                </div>
-                </th>
-              </tr>
-   
-            </tbody>
-          </table>
-  
-
-
+</div>
     </div>
     
     <!-- Text -->
@@ -161,7 +119,6 @@
 			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
 		</script>
         <script src="assets/js/forecast.js"></script>
-        
 
 	</div>
 </body>

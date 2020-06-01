@@ -36,6 +36,9 @@ function displayResults (weather) {
     let hilo = document.querySelector('.hi-low');
     hilo.innerText = `${weather.main.temp_min} / ${weather.main.temp_max}`;
 
+     let date = document.querySelector('.date');
+    date.innerText = `${weather.dt}`;
+
 
     
 
