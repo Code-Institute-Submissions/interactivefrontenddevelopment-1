@@ -30,6 +30,14 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script src="assets/js/contact.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_l0VrxRy6jOgDnR1SV1KpH");
+   })();
+</script>
   </head>
 
   <body>
@@ -65,103 +73,38 @@
               <a class="nav-link" href="forecast.html">Forecast</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input
-              class="form-control mr-sm-2"
-              type="text"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">
-              Search
-            </button>
-          </form>
+         
         </div>
       </nav>
 
       <main role="main" class="container">
-        <form action="https://formspree.io/mzbjegry" method="POST">
-          <input
-            type="text"
-            placeholder="Enter your first name"
-            id="firstName"
-            class="firstName"
-          />
-          <br /><br />
-          <input
-            type="text"
-            placeholder="Enter your last name"
-            id="lastName"
-            class="lastName"
-          />
-          <br /><br />
 
-          <input
-            type="radio"
-            id="male"
-            name="gender"
-            value="male"
-            class="male"
-          />
-          Male
+        <div class="center-form">
+                <form id="myform" method="post">
+<label>Email Address</label>
+<input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email Address" required/>
+<label>Name</label>
+<input type="text" name="from_name" class="form-control" id="from_name" placeholder="Name" required/>
 
-          <input
-            type="radio"
-            id="female"
-            name="gender"
-            value="female"
-            class="female"
-          />
-          Female <br /><br />
-
-          <input
-            type="email"
-            placeholder="Enter your email"
-            id="email"
-            class="email"
-          />
-          <br /><br />
-
-          <input
-            type="text"
-            placeholder="Address"
-            id="address"
-            class="address"
-          />
-          <br /><br />
-
-          <input type="checkbox" id="newsletter" class="newsletter" />Send me
-          monthly newsletter <br /><br />
-
-          <span>What would you like to say?</span>
-          <br />
-          <textarea id="query" rows="4" class="query"></textarea>
-          <br /><br />
-
-          <div class="status"></div>
-
-          <button type="submit" class="submitbutton">Send</button>
-        </form>
+<label>Enter your Message</label>
+<input type="text" rows="5" name="message" class="form-control" id="message" placeholder="Message" required/>
+<br><br>
+<button type="submit" class="btn btn-secondary center-block">
+Contact Us
+</button>
+</form>
+            </div>
 
         <!-- onclick="sendContact();"-->
       </main>
       <!-- /.container -->
-      <script
-        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"
-      ></script>
-      <script src="assets/js/contact.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+      </script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+      </script>
+      <script src="assets/js/sendEmail.js"></script>
     </div>
   </body>
 </html>
