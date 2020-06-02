@@ -17,12 +17,10 @@
 	<link href="assets/css/style.css" rel="stylesheet">
 
 
-    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/jquery.animatedheadline.css">
+        <link rel="stylesheet" href="assets/css/jquery.animatedheadline.css">
 </head>
 
 <body>
@@ -38,15 +36,14 @@
 					<li class="nav-item">
 						<a class="nav-link" href="index.html">Home </a>
 					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="search.html">Location <span class="sr-only">(current)</span></a>
+					<li class="nav-item">
+						<a class="nav-link" href="search.html">Location</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="contact.html">Contact</a>
 					</li>
-
-                    <li class="nav-item">
-              <a class="nav-link" href="forecast.html">Forecast</a>
+                    <li class="nav-item active">
+              <a class="nav-link" href="forecast.html">Forecast<span class="sr-only">(current)</span></a>
             </li>
 
 				</ul>
@@ -54,39 +51,34 @@
 			</div>
 		</nav>
 
-
-        
-    
-
-<main role="main" class="container">
+		<main role="main" class="container">
 
 
-<section class="intro animate-rotate-1">
-        <h2 class="animation-type">Rotate</h2>
-        <h1 class="ah-headline">
-            <span>My favorite programming language is</span>
-            <span class="ah-words-wrapper">
-                <b class="is-visible">JavaScript</b>
-                <b>Python</b>
-                <b>Swift</b>
-            </span>
-        </h1>
-    </section>
+
 			
             <!-- Jumbotron -->
 <div class="jumbotron p-0">
-
-
-
+<section class="intro animate-push">
+               <h2 class="ah-headline">
+            <span>Check the 5 day forecast</span>
+            <span class="ah-words-wrapper">
+                <b class="is-visible">in Cairo</b>
+                <b>in Stockholm</b>
+                <b>in Lima</b>
+                <b>in Pattaya</b>
+            </span>
+        </h2>
+    </section>
+  
   <!-- Card content -->
   <div class="card-body text-center mb-3">
 
     <!-- Title -->
-    <h3 class="card-title h3 my-4"><strong>Type in a location below and click Enter</strong></h3>
+    <h3 class="card-title h3 my-4"><strong>Type in a city name for a 5 day forecast</strong></h3>
 
 
     <div class="app-wrap">
-    <div class="table-responsive">
+     <div class="table-responsive">
           <table class="table table-hover">
             <tbody>
               <tr>
@@ -105,54 +97,69 @@
     </section>
      </th>
               </tr>
-
-              <tr>
+  
+    
+    <tr>
                 <th>
-              <section class="location">
-    <div class="date">Date</div>
-    </section>
-                </th>
-              </tr>
-
-              <tr>
-                <th>
-<div class="current">
-<div class="temp">20<span>C</span></div>
-</div>
-
-</th>
-              </tr>
-              <tr>
-                <th>
-              <div class="current">
-<div class="weather">Sunny</div>
-              </div>
-              </th>
-              </tr>
-                <tr>
-                <th>
-                <div class="current">
-                <div class="hi-low">20 / 25</div>
+                <div class="forecast">
+                <div class="day1">Today</div>
                 </div>
                 </th>
               </tr>
     
-    
+     <tr>
+                <th>
+                <div class="forecast">
+                <div class="day2">Tomorrow</div>
+                </div>
+                </th>
+              </tr>
+
+               <tr>
+                <th>
+                <div class="forecast">
+                <div class="day3">Next Day</div>
+                </div>
+                </th>
+              </tr>
+
+               <tr>
+                <th>
+                <div class="forecast">
+                <div class="day4">Day After</div>
+                </div>
+                </th>
+              </tr>
+
+               <tr>
+                <th>
+                <div class="forecast">
+                <div class="day5">Day After</div>
+                </div>
+                </th>
+              </tr>
    
             </tbody>
           </table>
+  
+
+
+    </div>
+    
+    <!-- Text -->
+    <p class="card-text py-2">Some quick example text to build on the card title and make up the bulk of the card's</p>
+    <!-- Button -->
+    <a href="#" class="btn purple-gradient btn-rounded mb-4">Button</a>
+
   </div>
 
 </div>
 <!-- Jumbotron -->
-
-  </div>
 </div>
 
-
-		</main><!-- /.container -->
-
-
+		</main>
+        
+        <!-- /.container -->
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
 		</script>
@@ -162,12 +169,25 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
 		</script>
-        <script src="assets/js/main.js"></script>
+        <script src="assets/js/forecast.js"></script>
+        
+
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
 <script src="https://code.jquery.com/jquery.min.js"></script>
-
 <script src="assets/js/jquery.animatedheadline.min.js"></script>
+
 	</div>
+    <!-- Footer -->
+<footer class="page-footer font-small white fixed-bottom">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 </body>
 
 </html>

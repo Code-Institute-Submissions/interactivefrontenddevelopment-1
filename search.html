@@ -17,13 +17,13 @@
 	<link href="assets/css/style.css" rel="stylesheet">
 
 
-    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css">
-            <link rel="stylesheet" href="assets/css/jquery.animatedheadline.css">
+	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="assets/css/jquery.animatedheadline.css">
 </head>
 
 <body>
-	<div class="bg">
+	<div>
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 			<a class="navbar-brand" href="#">Weather Forecast</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,28 +42,31 @@
 						<a class="nav-link" href="contact.html">Contact</a>
 					</li>
 
-                    <li class="nav-item">
-              <a class="nav-link" href="forecast.html">Forecast</a>
-            </li>
+					<li class="nav-item">
+						<a class="nav-link" href="forecast.html">Forecast</a>
+					</li>
 
 				</ul>
-				
+
 			</div>
 		</nav>
 
-
-        
-    
-
-<main role="main" class="container">
+	</div>
 
 
+	<div class="bg">
+		<main role="main" class="container">
 
-			
-            <!-- Jumbotron -->
-<div class="jumbotron p-0">
 
- <section class="intro animate-slide">
+
+
+			<!-- Jumbotron -->
+			<div class="jumbotron p-0">
+				<div class="container-fluid">
+					<div class="frontbackground">
+						<div class="row textanimation">
+							<div class="col-md-8 mx-auto">
+								<section class="intro animate-slide">
        
         <h1 class="ah-headline">
             <span>Check the weather</span>
@@ -75,99 +78,165 @@
             </span>
         </h1>
     </section>
-
-
-  <!-- Card content -->
-  <div class="card-body text-center mb-3">
-
-    <!-- Title -->
-    <h3 class="card-title h3 my-4"><strong>Type in a location below and click Enter</strong></h3>
-
-
-    <div class="app-wrap">
-    <div class="table-responsive">
-          <table class="table table-hover">
-            <tbody>
-              <tr>
-                <th>
-                
-    <header> 
-    <input type="text" autocomplete="off" class="search-box" placeholder="Search Here..."/>
+							</div>
+						</div>
+					</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-1 mx-auto">
+      <header>
+						<input type="text" autocomplete="off" class="search-box" placeholder="Search Here..."/>
     </header>
-    </th>
-              </tr>
-
-              <tr>
-                <th>
-    <section class="location">
-    <div class="city">Your Area</div>
-    </section>
-     </th>
-              </tr>
-
-              <tr>
-                <th>
-              <section class="location">
-    <div class="date">Date</div>
-    </section>
-                </th>
-              </tr>
-
-              <tr>
-                <th>
-<div class="current">
-<div class="temp">20<span>C</span></div>
-</div>
-
-</th>
-              </tr>
-              <tr>
-                <th>
-              <div class="current">
-<div class="weather">Sunny</div>
-              </div>
-              </th>
-              </tr>
-                <tr>
-                <th>
-                <div class="current">
-                <div class="hi-low">20 / 25</div>
-                </div>
-                </th>
-              </tr>
+    </div>
     
-    
-   
-            </tbody>
-          </table>
-  </div>
-
-</div>
-<!-- Jumbotron -->
-
   </div>
 </div>
+				
+
+						<div class="row ">
+							<div class="col-lg-1 mx-auto table-responsive-md">
+								<table class="table table-hover ">
+									<thead>
+										<tr>
+											<th>
+												<div> Location</div>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>
+												<section class="location">
+													<div class="city">Your Area</div>
+												</section>
+											</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="col-lg-1 mx-auto table-responsive-md">
+								<table class="table table-hover ">
+									<thead>
+										<tr>
+											<th>
+												<div> Date</div>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>
+												<section class="location">
+													<div class="date">Date</div>
+												</section>
+											</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="col-lg-1 mx-auto table-responsive-md">
+								<table class="table table-hover ">
+									<thead>
+										<tr>
+											<th>
+												<div> Temperature</div>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>
+												<div class="current">
+													<div class="temp">20<span>C</span></div>
+												</div>
+											</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+
+
+
+							<div class="col-lg-1 mx-auto table-responsive-md">
+								<table class="table table-hover ">
+									<thead>
+										<tr>
+											<th>
+												<div> Min/Max Temperature</div>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>
+												<div class="current">
+													<div class="hi-low">20 / 25</div>
+												</div>
+											</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+
+							<div class="col-lg-1 mx-auto table-responsive-md">
+								<table class="table table-hover ">
+									<thead>
+										<tr>
+											<th>
+												<div> Outlook</div>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>
+												<div class="current">
+													<div class="weather">Sunny</div>
+												</div>
+											</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+
+						</div>
+						<!-- Jumbotron -->
+
+				</div>
+			</div>
 
 		</main><!-- /.container -->
 
-
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-		</script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-		</script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-		</script>
-        <script src="assets/js/search.js"></script>
-
-
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-<script src="https://code.jquery.com/jquery.min.js"></script>
-<script src="assets/js/jquery.animatedheadline.min.js"></script>
-
+		<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+			<div class="container text-center">
+				<small>Copyright &copy; Weather Forecast</small>
+			</div>
+		</footer>
 	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+	</script>
+	<script src="assets/js/search.js"></script>
+
+
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script src="assets/js/jquery.animatedheadline.min.js"></script>
+
+
 </body>
 
 </html>
