@@ -37,17 +37,30 @@ window.addEventListener('load', ()=> {
                     const { country, sunrise, sunset } = data.sys;
                     /*const { description, icon, main } = data.weather;*/
                     
-                    weatherTemperature.textContent = temp;
-                    weatherTempmax.textContent = temp_max;
-                    weatherTempmin.textContent = temp_min
-                    weatherHumidity.textContent = humidity;
-                    weatherWind.textContent = speed;
+                    weatherTemperature.textContent = `${Math.round(temp)}°C`;
+                    
+                    weatherTempmax.textContent = `${Math.round(temp_max)}°C`;
+                    weatherTempmin.textContent = `${Math.round(temp_min)}°C`;
+                    weatherHumidity.textContent = `${Math.round(humidity)}%`;
+                    weatherWind.textContent = `${Math.round(speed)}km/h`;
                     weatherCountry.textContent = country;
                     weatherSunrise.textContent = sunrise;
                     weatherSunset.textContent = sunset;
                     weatherLocation.textContent = data.name;
 
                    
+
+                    var sunriselongtime = sunrise;
+var sunrisedate = new Date(sunriselongtime * 1000);
+var sunrisetime = sunrisedate.toLocaleTimeString();
+$(".sunrisedate").html(sunrisedate);
+$(".sunrisetime").html(sunrisetime);
+
+var sunsetlongtime = sunset;
+var sunsetdate = new Date(sunsetlongtime * 1000);
+var sunsettime = sunsetdate.toLocaleTimeString();
+$(".sunsetdate").html(sunsetdate);
+$(".sunsettime").html(sunsettime);
 
                 });
 
@@ -99,3 +112,4 @@ $(function() {
     });
 
 /* Openweather API Key 73758c02ea981f5a32c0ab44ef2f4078 */
+

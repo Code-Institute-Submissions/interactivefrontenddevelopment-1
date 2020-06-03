@@ -27,20 +27,24 @@ function displayResults (weather) {
     city.innerText = `${weather.name}, ${weather.sys.country}`;
 
     let temp = document.querySelector('.current .temp');
-    temp.innerText = `${weather.main.temp}`;
+    temp.innerText = `${Math.round(weather.main.temp)}°C`;
 
     let weatherstatus = document.querySelector('.current .weather');
     weatherstatus.innerText = `${weather.weather[0].main}`;
 
 
     let hilo = document.querySelector('.hi-low');
-    hilo.innerText = `${weather.main.temp_min} / ${weather.main.temp_max}`;
+    hilo.innerText = `${Math.round(weather.main.temp_min)}°C / ${Math.round(weather.main.temp_max)}°C`;
 
      let date = document.querySelector('.date');
     date.innerText = `${weather.dt}`;
 
 
-    
+     var longtime = `${weather.dt}`;
+var searchdate = new Date(longtime * 1000);
+var searchtime = searchdate.toLocaleTimeString();
+$(".searchdate").html(searchdate);
+$(".searchtime").html(searchtime);
 
 }
 
