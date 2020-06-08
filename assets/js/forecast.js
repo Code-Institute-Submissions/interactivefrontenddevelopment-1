@@ -46,12 +46,36 @@ function displayResults (forecast) {
 
     /* return to this to get icon working on forecast */
 
-    let weatherIcon = document.querySelector(".weathericon2");
-   weatherIcon.innerText = `${forecast.list[6].weather[0].icon}`; 
+    let weatherIcontoday = document.querySelector(".weathericontoday");
+   weatherIcontoday.innerText = `${forecast.list[6].weather[0].icon}`; 
+   let weatherIcontomorrow = document.querySelector(".weathericontomorrow");
+   weatherIcontomorrow.innerText = `${forecast.list[14].weather[0].icon}`; 
+   let weatherIconday3 = document.querySelector(".weathericonday3");
+   weatherIconday3.innerText = `${forecast.list[22].weather[0].icon}`; 
+   let weatherIconday4 = document.querySelector(".weathericonday4");
+   weatherIconday4.innerText = `${forecast.list[30].weather[0].icon}`; 
+   let weatherIconday5 = document.querySelector(".weathericonday5");
+   weatherIconday5.innerText = `${forecast.list[38].weather[0].icon}`; 
 
-   let weatherIcon2 = document.querySelector(".weathericon2");
-  weatherIcon2.innerText = "http://openweathermap.org/img/w/" + weatherIcon + ".png";
-$(".weathericon2").html("<img src='http://openweathermap.org/img/wn/" + forecast.list[6].weather[0].icon + "@2x.png' alt='Icon depicting current weather.'>"); 
+   let weatherIcontoday2 = document.querySelector(".weathericontoday");
+  weatherIcontoday2.innerText = "http://openweathermap.org/img/w/" + weatherIcontoday + ".png";
+$(".weathericontoday").html("<img src='http://openweathermap.org/img/wn/" + forecast.list[6].weather[0].icon + "@2x.png' alt='Icon depicting current weather.'>"); 
+
+let weatherIcontomorrow2 = document.querySelector(".weathericontomorrow");
+  weatherIcontomorrow2.innerText = "http://openweathermap.org/img/w/" + weatherIcontomorrow + ".png";
+$(".weathericontomorrow").html("<img src='http://openweathermap.org/img/wn/" + forecast.list[14].weather[0].icon + "@2x.png' alt='Icon depicting current weather.'>"); 
+
+let weatherIconday32 = document.querySelector(".weathericonday3");
+  weatherIconday32.innerText = "http://openweathermap.org/img/w/" + weatherIconday3 + ".png";
+$(".weathericonday3").html("<img src='http://openweathermap.org/img/wn/" + forecast.list[22].weather[0].icon + "@2x.png' alt='Icon depicting current weather.'>"); 
+
+let weatherIconday42 = document.querySelector(".weathericonday4");
+  weatherIconday42.innerText = "http://openweathermap.org/img/w/" + weatherIconday4 + ".png";
+$(".weathericonday4").html("<img src='http://openweathermap.org/img/wn/" + forecast.list[30].weather[0].icon + "@2x.png' alt='Icon depicting current weather.'>"); 
+
+let weatherIconday52 = document.querySelector(".weathericonday5");
+  weatherIconday52.innerText = "http://openweathermap.org/img/w/" + weatherIconday5 + ".png";
+$(".weathericonday5").html("<img src='http://openweathermap.org/img/wn/" + forecast.list[38].weather[0].icon + "@2x.png' alt='Icon depicting current weather.'>"); 
 
 }
 
