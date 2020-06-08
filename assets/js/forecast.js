@@ -44,6 +44,15 @@ function displayResults (forecast) {
 
     
 
+    /* return to this to get icon working on forecast */
+
+    let weatherIcon = document.querySelector(".weathericon2");
+   weatherIcon.innerText = `${forecast.list[6].weather[0].icon}`; 
+
+   let weatherIcon2 = document.querySelector(".weathericon2");
+  weatherIcon2.innerText = "http://openweathermap.org/img/w/" + weatherIcon + ".png";
+$(".weathericon2").html("<img src='http://openweathermap.org/img/wn/" + forecast.list[6].weather[0].icon + "@2x.png' alt='Icon depicting current weather.'>"); 
+
 }
 
 

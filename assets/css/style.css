@@ -114,7 +114,9 @@ padding: 0px;
     cursor: pointer;
 }
 
-.weatherstatus {
+.h_two_weathertemperature {
+    text-shadow: 0 0 3px #FF0000;
+    font-size: 60px;
  
 }
 
@@ -223,3 +225,7 @@ a { text-decoration: none }
 .ah-headline { font-size: 2rem }
 }
 
+
+.weathericon img{
+font-size: 60px;
+}

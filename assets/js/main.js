@@ -11,6 +11,8 @@ window.addEventListener('load', ()=> {
     let weatherSunrise = document.querySelector(".h_two_weathersunrise");
     let weatherSunset = document.querySelector(".h_two_weathersunset");
     let weatherCountry = document.querySelector(".h_two_weathercountry");
+    let weatherIcon = document.querySelector(".weathericon");
+
 
 
     
@@ -47,6 +49,8 @@ window.addEventListener('load', ()=> {
                     weatherSunrise.textContent = sunrise;
                     weatherSunset.textContent = sunset;
                     weatherLocation.textContent = data.name;
+                    weatherIcon.textContent = data.weather[0].icon;
+
 
                    
 
@@ -61,6 +65,10 @@ var sunsetdate = new Date(sunsetlongtime * 1000);
 var sunsettime = sunsetdate.toLocaleTimeString();
 $(".sunsetdate").html(sunsetdate);
 $(".sunsettime").html(sunsettime);
+
+
+var iconUrl = "http://openweathermap.org/img/w/" + weatherIcon + ".png";
+$(".weathericon").html("<img src='http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png' alt='Icon depicting current weather.'>");
 
                 });
 

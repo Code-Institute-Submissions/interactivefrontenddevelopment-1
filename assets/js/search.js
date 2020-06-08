@@ -38,6 +38,15 @@ function displayResults (weather) {
 
      let date = document.querySelector('.date');
     date.innerText = `${weather.dt}`;
+    
+   let weatherIcon = document.querySelector(".weathericon2");
+   weatherIcon.innerText = `${weather.weather[0].icon}`; 
+
+   let weatherIcon2 = document.querySelector(".weathericon2");
+  weatherIcon2.innerText = "http://openweathermap.org/img/w/" + weatherIcon + ".png";
+$(".weathericon2").html("<img src='http://openweathermap.org/img/wn/" + weather.weather[0].icon + "@2x.png' alt='Icon depicting current weather.'>"); 
+
+
 
 
      var longtime = `${weather.dt}`;
