@@ -20,6 +20,7 @@
 	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="assets/css/jquery.animatedheadline.css">
+    <script src="https://kit.fontawesome.com/e6035afc3e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -83,46 +84,82 @@
 					</div>
 <div class="container">
   <div class="row">
-    <div class="col-lg-1 mx-auto">
+    <div class="col-md-12 mx-auto">
       <header>
-						<input type="text" autocomplete="off" class="search-box" placeholder="Search Here..."/>
+						<input type="text" autocomplete="off" class="search-box searchround" placeholder="Search..."/>
+                       
     </header>
     </div>
     
   </div>
 </div>
 
+<!-- First Row --> 
+
 <div class="row">
-<div class="col-lg-1 mx-auto table-responsive-md">
-<table class="table table-hover ">
-									<thead>
-										<tr>
-											<th>
-												<section class="location">
-                                                <div class="weathericon2">ICON2</div>
+  <div class="col-md-6 mx-auto table-responsive-md"><table class="table table-hover ">
+                
+                <tbody>
+              <tr>
+                <th>
+                
+                  <div class="weathericon2"></div>
+                
+                 </th>
+                
+              </tr>               
+                </tbody>
+              </table></div>
+  <div class="col-md-6 mx-auto table-responsive-md"><table class="table table-hover ">
+                
+                <tbody>
+              <tr>
+                <th>
+                <div class="current">
+                <div class="temp"></div>
+                </div>
+                </th>
+              </tr>               
+                </tbody>
+              </table></div>
+</div>
+
+
+<!-- Second Row --> 
+
+<div class="row">
+  
+  <div class="col-md-12 mx-auto table-responsive-md"><table class="table table-hover ">
+                
+                <tbody>
+              <tr>
+                <th>
+                
+                 
+                  <section class="location">
+													<div class="city"></div>
                                                 </section>
-											</th>
-                                            <th>
-												<div class="current">
-													<div class="temp">20<span>C</span></div>
-												</div>
-											</th>
-										</tr>
-									</thead>
-									
-								</table>
+                  
+                
+                </th>
+              </tr>               
+                </tbody>
+              </table></div>
 </div>
 
-</div>
-				
 
-						<div class="row ">
-							<div class="col-lg-1 mx-auto table-responsive-md">
-								<table class="table table-hover ">
+
+<!-- Third Row --> 
+
+
+ <div class="row">
+  <div class="col-md-4 mx-auto table-responsive-md">
+  
+ <table class="table table-hover ">
 									<thead>
 										<tr>
 											<th>
-												<div> Location</div>
+												<div class="weatherheading"> Current Time</div>
 											</th>
 										</tr>
 									</thead>
@@ -130,42 +167,23 @@
 										<tr>
 											<th>
 												<section class="location">
-													<div class="city">Your Area</div>
-                                                </section>
-											</th>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-							<div class="col-lg-1 mx-auto table-responsive-md">
-								<table class="table table-hover ">
-									<thead>
-										<tr>
-											<th>
-												<div> Date</div>
-											</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th>
-												<section class="location">
-													<div class="date searchdate">Date</div>
+													<div class="date searchdate"></div>
                                                     
 												</section>
 											</th>
 										</tr>
 									</tbody>
 								</table>
-							</div>
+  
+  </div>
 
-							<div class="col-lg-1 mx-auto table-responsive-md">
-								<table class="table table-hover ">
+
+  <div class="col-md-4 mx-auto table-responsive-md">
+  <table class="table table-hover ">
 									<thead>
 										<tr>
 											<th>
-												<div> </div>
+												<div class="weatherheading"> Min/Max Temperature</div>
 											</th>
 										</tr>
 									</thead>
@@ -173,23 +191,24 @@
 										<tr>
 											<th>
 												<div class="current">
-													
+													<div class="hi-low"></div>
 												</div>
 											</th>
 										</tr>
 									</tbody>
 								</table>
-							</div>
+  
+  </div>
 
 
 
 
-							<div class="col-lg-1 mx-auto table-responsive-md">
-								<table class="table table-hover ">
+                <div class="col-md-4 mx-auto table-responsive-md">
+                <table class="table table-hover ">
 									<thead>
 										<tr>
 											<th>
-												<div> Min/Max Temperature</div>
+												<div class="weatherheading"> Outlook</div>
 											</th>
 										</tr>
 									</thead>
@@ -197,38 +216,25 @@
 										<tr>
 											<th>
 												<div class="current">
-													<div class="hi-low">20 / 25</div>
+													<div class="weather"></div>
 												</div>
 											</th>
 										</tr>
 									</tbody>
 								</table>
-							</div>
+                </div>
+
+                
 
 
-							<div class="col-lg-1 mx-auto table-responsive-md">
-								<table class="table table-hover ">
-									<thead>
-										<tr>
-											<th>
-												<div> Outlook</div>
-											</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th>
-												<div class="current">
-													<div class="weather">Sunny</div>
-												</div>
-											</th>
-										</tr>
-									</tbody>
-								</table>
-							</div>
+                
+</div>
 
 
-						</div>
+
+				
+
+						
 						<!-- Jumbotron -->
 
 				</div>

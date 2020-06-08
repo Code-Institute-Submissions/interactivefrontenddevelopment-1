@@ -120,11 +120,38 @@ padding: 0px;
  
 }
 
+.h_two_weatherlocation {
+     text-shadow: 0 0 3px #FF0000;
+    font-size: 60px;
+}
+
+.city {
+     text-shadow: 0 0 3px #FF0000;
+    font-size: 60px;
+}
+
+.temp {
+     text-shadow: 0 0 3px #FF0000;
+    font-size: 60px;
+}
+
+
+.weatherheading {
+    
+    text-decoration: underline;
+    font-weight: 900;
+}
+
 .fivedayforecast {
   height: 30vh;
     width: 50%;
     display: flex;
     align-items: center;
+}
+
+.searchround {
+border-radius: 1rem;
+  
 }
 
 .table {
@@ -229,3 +256,5 @@ a { text-decoration: none }
 .weathericon img{
 font-size: 60px;
 }
+
+
