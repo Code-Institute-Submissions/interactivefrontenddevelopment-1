@@ -1,8 +1,12 @@
+/* JS file for search.html to load weather based on user search */
+/*Openweather API key*/
+
 const api = {
     key: "73758c02ea981f5a32c0ab44ef2f4078",
     baseurl: "https://api.openweathermap.org/data/2.5/"
 }
 
+/*Set search box*/
 const searchbox = document.querySelector('.search-box');
 searchbox.addEventListener('keypress', setQuery);
 
@@ -13,6 +17,7 @@ function setQuery(evt) {
     }
 }
 
+/*Get info from api based on api key*/
 function getResults (query) {
     fetch(`${api.baseurl}weather?q=${query}&units=metric&APPID=${api.key}`)
     .then(weather => {
@@ -20,6 +25,7 @@ function getResults (query) {
     }).then(displayResults);
 }
 
+/*Pull info from openweather api*/
 function displayResults (weather) {
     console.log(weather);
 
@@ -32,13 +38,13 @@ function displayResults (weather) {
     let weatherstatus = document.querySelector('.current .weather');
     weatherstatus.innerText = `${weather.weather[0].main}`;
 
-
     let hilo = document.querySelector('.hi-low');
     hilo.innerText = `${Math.round(weather.main.temp_min)}°C / ${Math.round(weather.main.temp_max)}°C`;
 
      let date = document.querySelector('.date');
     date.innerText = `${weather.dt}`;
     
+    /*Get icons from Openweather API*/
    let weatherIcon = document.querySelector(".weathericon2");
    weatherIcon.innerText = `${weather.weather[0].icon}`; 
 
@@ -47,8 +53,7 @@ function displayResults (weather) {
 $(".weathericon2").html("<img src='http://openweathermap.org/img/wn/" + weather.weather[0].icon + "@2x.png' alt='Icon depicting current weather.'>"); 
 
 
-
-
+/* Convert unix timestamp to readable time/date */
      var longtime = `${weather.dt}`;
 var searchdate = new Date(longtime * 1000);
 var searchtime = searchdate.toLocaleTimeString();
@@ -58,45 +63,10 @@ $(".searchtime").html(searchtime);
 }
 
 
-
+/* Run animated headline above weather info*/
 $(function() {
-        $('.animate-rotate-1').animatedHeadline({
-            animationType: 'rotate-1'
-        });
-
-        $('.animate-type').animatedHeadline({
-            animationType: 'type'
-        });
-
-        $('.animate-rotate-2').animatedHeadline({
-            animationType: 'rotate-2'
-        });
-
-        $('.animate-loading-bar').animatedHeadline({
-            animationType: 'loading-bar'
-        });
 
         $('.animate-slide').animatedHeadline({
             animationType: 'slide'
-        });
-
-        $('.animate-clip').animatedHeadline({
-            animationType: 'clip'
-        });
-
-        $('.animate-zoom').animatedHeadline({
-            animationType: 'zoom'
-        });
-
-        $('.animate-rotate-3').animatedHeadline({
-            animationType: 'rotate-3'
-        });
-
-        $('.animate-scale').animatedHeadline({
-            animationType: 'scale'
-        });
-
-        $('.animate-push').animatedHeadline({
-            animationType: 'push'
         });
     });

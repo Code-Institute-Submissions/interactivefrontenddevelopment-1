@@ -1,36 +1,33 @@
 <!doctype html>
 <html lang="en">
+<!-- Head Start -->
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-	<meta name="generator" content="Jekyll v4.0.1">
-	<title>Weather Forecast</title>
-
-	<link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
-
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<!-- Custom styles for this template -->
-	<link href="assets/css/style.css" rel="stylesheet">
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+	<link href="assets/css/style.css" rel="stylesheet" />
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="assets/css/jquery.animatedheadline.css" />
 
-
-        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css">
-
-        <link rel="stylesheet" href="assets/css/jquery.animatedheadline.css">
+	<title>Weather Forecast</title>
 </head>
+<!-- Head End -->
+
+<!-- Body Start -->
 
 <body>
+<!-- Navbar Start -->
 	<div>
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-			<a class="navbar-brand" href="#">Weather Forecast</a>
+        <!-- Top logo link-->
+			<a class="navbar-brand" href="index.html">Weather Forecast</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
+<!-- Navbar Menu -->
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
@@ -42,296 +39,255 @@
 					<li class="nav-item">
 						<a class="nav-link" href="contact.html">Contact</a>
 					</li>
-                    <li class="nav-item active">
-              <a class="nav-link" href="forecast.html">Forecast<span class="sr-only">(current)</span></a>
-            </li>
-
+					<li class="nav-item active">
+						<a class="nav-link" href="forecast.html">Forecast<span class="sr-only">(current)</span></a>
+					</li>
 				</ul>
-				
 			</div>
 		</nav>
 	</div>
-<div class="bg">
+    	<!-- Centerpiece Start -->
 
+	<!-- Background -->
+
+	<div class="bg">
 		<main role="main" class="container">
-
-        <!-- Jumbotron -->
-        <div class="jumbotron p-0">
-          <div class="container-fluid">
-          <div class="frontbackground">
-            <div class="row textanimation">
-              <div class="col-md-8 mx-auto">
-                <section class="intro animate-push">
-               <h2 class="ah-headline">
-            <span>Check the 5 day forecast</span>
-            <span class="ah-words-wrapper">
+			<!-- Jumbotron -->
+			<div class="jumbotron p-0">
+				<div class="container-fluid">
+					<div class="frontbackground">
+                    <!-- Text Animation Start -->
+						<div class="row textanimation">
+							<div class="col-md-8 mx-auto">
+								<section class="intro animate-push">
+									<h2 class="ah-headline">
+										<span>Check the 5 day forecast</span>
+										<span class="ah-words-wrapper">
                 <b class="is-visible">in Cairo</b>
                 <b>in Stockholm</b>
                 <b>in Lima</b>
                 <b>in Pattaya</b>
             </span>
-        </h2>
-    </section>
-              </div>
-              </div>
-            </div>
-
-			
-           
-<div class="container">
-  <div class="row">
-    <div class="col-lg-1 mx-auto">
-       <header> 
-    <input type="text" autocomplete="off" class="search-box" placeholder="Search Here..."/>
-    </header>
-    </div>
-    
-  </div>
-</div>
-
-
-<!-- First Row --> 
-
-<div class="row">
-  
-  <div class="col-md-12 mx-auto table-responsive-md"><table class="table table-hover ">
-                
-                <tbody>
-              <tr>
-                <th>
-                
-                 
-                  <section class="location">
-													<div class="city"></div>
-                                                </section>
-                  
-                
-                </th>
-              </tr>               
-                </tbody>
-              </table></div>
-</div>
-
-
-<!-- Second Row --> 
-
- 
-
-
-
-
-
-
-
-
-
-
-
-<div class="row ">
-							
-
-							<div class="col-md-2 mx-auto table-responsive-md">
-								<table class="table table-hover ">
-									<thead>
-										<tr>
-											<th>
-												<div> Tomorrow</div>
-											</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th>
-												<div class="forecast">
-                <div class="day1"></div>
-                </div>
-											</th>
-										</tr>
-                                        <tr>
-											<th>
-												 <section class="location">
-                                                <div class="weathericontoday"></div>
-                                                </section>
-											</th>
-										</tr>
-									</tbody>
-								</table>
+									</h2>
+								</section>
 							</div>
-
-
-                           
-
-							<div class="col-md-2 mx-auto table-responsive-md">
-								<table class="table table-hover ">
-									<thead>
-										<tr>
-											<th>
-												<div> Day Two</div>
-											</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th>
-												<div class="forecast">
-                <div class="day2"></div>
-                </div>
-											</th>
-										</tr>
-                                        <tr>
-											<th>
-												 <section class="location">
-                                                <div class="weathericontomorrow"></div>
-                                                </section>
-											</th>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-
-
-
-							<div class="col-md-2 mx-auto table-responsive-md">
-								<table class="table table-hover ">
-									<thead>
-										<tr>
-											<th>
-												<div> Day Three</div>
-											</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th>
-												<div class="forecast">
-                <div class="day3"></div>
-                </div>
-											</th>
-										</tr>
-                                         <tr>
-											<th>
-												 <section class="location">
-                                                <div class="weathericonday3"></div>
-                                                </section>
-											</th>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-
-							<div class="col-md-2 mx-auto table-responsive-md">
-								<table class="table table-hover ">
-									<thead>
-										<tr>
-											<th>
-												<div> Day Four</div>
-											</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th>
-												<div class="forecast">
-                <div class="day4"></div>
-                </div>
-											</th>
-										</tr>
-                                         <tr>
-											<th>
-												 <section class="location">
-                                                <div class="weathericonday4"></div>
-                                                </section>
-											</th>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-
-                            <div class="col-md-2 mx-auto table-responsive-md">
-								<table class="table table-hover ">
-									<thead>
-										<tr>
-											<th>
-												<div> Day Five</div>
-											</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th>
-												<div class="forecast">
-                <div class="day5"></div>
-                </div>
-											</th>
-										</tr>
-                                         <tr>
-											<th>
-												 <section class="location">
-                                                <div class="weathericonday5"></div>
-                                                </section>
-											</th>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-
 						</div>
-  
-  <!-- Card content -->
-  <div class="card-body text-center mb-3">
+					</div>
 
-    <!-- Title -->
-    <h3 class="card-title h3 my-4"><strong>Type in a city name for a 5 day forecast</strong></h3>
+ <!-- Weather data table Start -->
+                    <!-- Search Box-->
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-1 mx-auto">
+								<header>
+									<input type="text" autocomplete="off" class="search-box" placeholder="Search Here..."/>
+                                </header>
+							</div>
+						</div>
+					</div>
 
 
-    
-    
-    <!-- Text -->
-    <p class="card-text py-2">Some quick example text to build on the card title and make up the bulk of the card's</p>
-    <!-- Button -->
-    <a href="#" class="btn purple-gradient btn-rounded mb-4">Button</a>
+					<!-- First Row - Icon & Temp-->
 
-  </div>
+					<div class="row">
+						<div class="col-md-12 mx-auto table-responsive-md">
+							<table class="table table-hover ">
+								<tbody>
+									<tr>
+										<th>
+											<section class="location">
+												<div class="city"></div>
+											</section>
+										</th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 
-</div>
-<!-- Jumbotron -->
-</div>
+					<!-- Second Row - 5 Day Forecast-->
+
+					<div class="row ">
+						<div class="col-md-2 mx-auto table-responsive-md">
+							<table class="table table-hover ">
+								<thead>
+									<tr>
+										<th>
+											<div> Tomorrow</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>
+											<div class="forecast">
+												<div class="day1"></div>
+											</div>
+										</th>
+									</tr>
+									<tr>
+										<th>
+											<section class="location">
+												<div class="weathericontoday"></div>
+											</section>
+										</th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="col-md-2 mx-auto table-responsive-md">
+							<table class="table table-hover ">
+								<thead>
+									<tr>
+										<th>
+											<div> Day Two</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>
+											<div class="forecast">
+												<div class="day2"></div>
+											</div>
+										</th>
+									</tr>
+									<tr>
+										<th>
+											<section class="location">
+												<div class="weathericontomorrow"></div>
+											</section>
+										</th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="col-md-2 mx-auto table-responsive-md">
+							<table class="table table-hover ">
+								<thead>
+									<tr>
+										<th>
+											<div> Day Three</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>
+											<div class="forecast">
+												<div class="day3"></div>
+											</div>
+										</th>
+									</tr>
+									<tr>
+										<th>
+											<section class="location">
+												<div class="weathericonday3"></div>
+											</section>
+										</th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="col-md-2 mx-auto table-responsive-md">
+							<table class="table table-hover ">
+								<thead>
+									<tr>
+										<th>
+											<div> Day Four</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>
+											<div class="forecast">
+												<div class="day4"></div>
+											</div>
+										</th>
+									</tr>
+									<tr>
+										<th>
+											<section class="location">
+												<div class="weathericonday4"></div>
+											</section>
+										</th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="col-md-2 mx-auto table-responsive-md">
+							<table class="table table-hover ">
+								<thead>
+									<tr>
+										<th>
+											<div> Day Five</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>
+											<div class="forecast">
+												<div class="day5"></div>
+											</div>
+										</th>
+									</tr>
+									<tr>
+										<th>
+											<section class="location">
+												<div class="weathericonday5"></div>
+											</section>
+										</th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					
+					<div class="card-body text-center mb-3">
+
+						<!-- Title -->
+						<h3 class="card-title h3 my-4"><strong>Type in a city name for a 5 day forecast</strong></h3>
+					</div>
+				</div>
+				<!-- Jumbotron End-->
+			</div>
 
 		</main>
-        
-        <!-- /.container -->
-        <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-        <div class="container text-center">
-          <small>Copyright &copy; Weather Forecast</small>
-        </div>
-      </footer>
-    </div>
-    
 
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-		</script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-		</script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-		</script>
-        <script src="assets/js/forecast.js"></script>
-        
+		<!-- Main End -->
 
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-<script src="https://code.jquery.com/jquery.min.js"></script>
-<script src="assets/js/jquery.animatedheadline.min.js"></script>
-
-	
-   
-
-
+        <!-- Footer Start -->
+		<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+			<div class="container text-center">
+				<small>Copyright &copy; Weather Forecast</small>
+			</div>
+		</footer>
+        <!-- Footer End -->
+	</div>
+<!-- Required Scripts -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+	</script>
+     <!-- Local JS file for forecast.html -->
+	<script src="assets/js/forecast.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+    <!-- Script for animated headline -->
+	<script src="assets/js/jquery.animatedheadline.min.js"></script>
 </body>
-
+<!-- Body End -->
 </html>

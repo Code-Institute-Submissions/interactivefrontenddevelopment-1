@@ -1,7 +1,7 @@
+/* JS file for index.html to load weather based on browser location */
 window.addEventListener('load', ()=> {
     let longtitudecoords;
     let latitudecoords;
-    
     let weatherTemperature = document.querySelector(".h_two_weathertemperature");
     let weatherHumidity = document.querySelector(".h_two_weatherstatus");
     let weatherLocation = document.querySelector(".h_two_weatherlocation");
@@ -12,14 +12,6 @@ window.addEventListener('load', ()=> {
     let weatherSunset = document.querySelector(".h_two_weathersunset");
     let weatherCountry = document.querySelector(".h_two_weathercountry");
     let weatherIcon = document.querySelector(".weathericon");
-
-
-
-    
-
-
-
-    
 
     if (navigator.geolocation){
         navigator.geolocation.getCurrentPosition
@@ -34,13 +26,14 @@ window.addEventListener('load', ()=> {
                 })
                 .then(data => {
                     console.log(data);
+                    /*Pull info from the openweather api*/
                     const { temp, temp_max, temp_min, humidity } = data.main;
                     const { speed } = data.wind;
                     const { country, sunrise, sunset } = data.sys;
                     /*const { description, icon, main } = data.weather;*/
                     
+                    /*Display info from api - Round down numbers if necessary*/
                     weatherTemperature.textContent = `${Math.round(temp)}°C`;
-                    
                     weatherTempmax.textContent = `${Math.round(temp_max)}°C`;
                     weatherTempmin.textContent = `${Math.round(temp_min)}°C`;
                     weatherHumidity.textContent = `${Math.round(humidity)}%`;
@@ -51,10 +44,8 @@ window.addEventListener('load', ()=> {
                     weatherLocation.textContent = data.name;
                     weatherIcon.textContent = data.weather[0].icon;
 
-
-                   
-
-                    var sunriselongtime = sunrise;
+/* Convert unix timestamp to readable time/date for sunrise and sunset */
+var sunriselongtime = sunrise;
 var sunrisedate = new Date(sunriselongtime * 1000);
 var sunrisetime = sunrisedate.toLocaleTimeString();
 $(".sunrisedate").html(sunrisedate);
@@ -66,9 +57,9 @@ var sunsettime = sunsetdate.toLocaleTimeString();
 $(".sunsetdate").html(sunsetdate);
 $(".sunsettime").html(sunsettime);
 
-
-var iconUrl = "http://openweathermap.org/img/w/" + weatherIcon + ".png";
-$(".weathericon").html("<img src='http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png' alt='Icon depicting current weather.'>");
+/* Insert openweather icons into the first row of index.html */
+var iconUrl = "https://openweathermap.org/img/w/" + weatherIcon + ".png";
+$(".weathericon").html("<img src='https://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png' alt='Icon depicting current weather.'>");
 
                 });
 
@@ -77,45 +68,11 @@ $(".weathericon").html("<img src='http://openweathermap.org/img/wn/" + data.weat
 });
 
 
+/* Run animated headline above weather info*/
+
 $(function() {
         $('.animate-rotate-1').animatedHeadline({
             animationType: 'rotate-1'
-        });
-
-        $('.animate-type').animatedHeadline({
-            animationType: 'type'
-        });
-
-        $('.animate-rotate-2').animatedHeadline({
-            animationType: 'rotate-2'
-        });
-
-        $('.animate-loading-bar').animatedHeadline({
-            animationType: 'loading-bar'
-        });
-
-        $('.animate-slide').animatedHeadline({
-            animationType: 'slide'
-        });
-
-        $('.animate-clip').animatedHeadline({
-            animationType: 'clip'
-        });
-
-        $('.animate-zoom').animatedHeadline({
-            animationType: 'zoom'
-        });
-
-        $('.animate-rotate-3').animatedHeadline({
-            animationType: 'rotate-3'
-        });
-
-        $('.animate-scale').animatedHeadline({
-            animationType: 'scale'
-        });
-
-        $('.animate-push').animatedHeadline({
-            animationType: 'push'
         });
     });
 

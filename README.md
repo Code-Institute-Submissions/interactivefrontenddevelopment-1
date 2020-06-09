@@ -1,39 +1,69 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+Your Project's Name
 
-Welcome Alan Staunton,
+The name of the site is "Weather Forecast".
+The site pulls weather information from openweather using the openweather api. It displays various weather information and has images to clearly show the weather information.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
 
-## Gitpod Reminders
+This site has four main aims
+1: index.html displays weather information based on the users location.
+2: search.html displays weather information based on a users search.
+3: forecast.html displays a 5 day forecast of a location based on a users search
+4: contact.html displays a contact form
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+UX
 
-`python3 -m http.server`
+The design of the site is simple with the main aim being the interaction between the user and the openweather api.
+Each page has an animated headline informing the user of the purpose of each page.
+Each page has a navigation bar at the top, an animated headline underneath the navbar, a table with the weather information and a footer.
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
+The original balsamiq wireframes are in the folder "UX".
+The main aim of the user is to find weather information based on their location. On the main page, they must accept the popup to allow location access. Once this is approved, the page will display weather based on that persons location.
+If a user would like to search for the current weather in any location, they can click on the "Search" page. Here the user can search for the weather in any location in the world.
+If a user would like a five day forecast, they can click on "Forecast", type in a location and they will receive a five day forecast of that location.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
+Technologies Used
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+Javascript
+html
+CSS
+JQuery
 
-## Updates Since The Instructional Video
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+Testing
+In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Contact form:
+Go to the "Contact Us" page
+Try to submit the empty form and verify that an error message about the required fields appears
+Try to submit the form with an invalid email address and verify that a relevant error message appears
+Try to submit the form with all inputs valid and verify that a success message appears.
+In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
---------
+If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
-Happy coding!
+Deployment
+This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+
+In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
+
+Different values for environment variables (Heroku Config Vars)?
+Different configuration files?
+Separate git branch?
+In addition, if it is not obvious, you should also describe how to run your code locally.
+
+Credits
+Content
+The text for section Y was copied from the Wikipedia article Z
+Media
+The photos used in this site were obtained from ...
+Acknowledgements
+I received inspiration for this project from X

@@ -13,13 +13,13 @@ body, html {
 }
 
 .bg {
-  /* The image used */
+  /* The image used for the background */
   background-image: url("/assets/images/city.jpg");
 
   /* Full height */
   height: 60%; 
 
-  /* Center and scale the image nicely */
+  /* Center and scale the image */
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
@@ -27,7 +27,6 @@ body, html {
 }
 
 .jumbotron {
-  /*background-image: url("/assets/images/sky.jpg");*/
   background-color: #323544;
   background-size: cover;
 }
@@ -53,6 +52,7 @@ padding-right: 0px;
 padding-left: 0px;
 }
 
+/* Background for jumbotron */
 .frontbackground {
     background-image: url("/assets/images/rain.jpg");
 
@@ -66,15 +66,15 @@ padding: 0px;
 
 }
 
-.rowsettings {
+/*.rowsettings {
     padding: 10px;
-    /*background-color: #67686d;*/
+    
 }
 
 .rowsettingsdark {
     padding: 10px; 
-    /*background-color: #262936; */
-}
+   
+}*/
 
 
 .table td, .table th {
@@ -104,10 +104,6 @@ padding: 0px;
 
 }
 
-.weatherlocation {
-  
-
-}
 
 .weathertemperature {
  
@@ -202,8 +198,6 @@ form label {
 }
 
 
-
-
 .intro, .title { text-align: center }
 
 *, ::after, ::before { box-sizing: border-box } 
@@ -212,8 +206,6 @@ html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale
 }
-
-
 
 
 .animation-type, .title h1 {
@@ -256,5 +248,4 @@ a { text-decoration: none }
 .weathericon img{
 font-size: 60px;
 }
-
 
