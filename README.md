@@ -40,11 +40,11 @@ Whenever it is feasible, prefer to automate your tests, and if you've done so, p
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
 Contact form:
-Go to the "Contact Us" page
-Try to submit the empty form and verify that an error message about the required fields appears
-Try to submit the form with an invalid email address and verify that a relevant error message appears
-Try to submit the form with all inputs valid and verify that a success message appears.
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+1: Go to the "Contact Us" page
+2: Try to submit the empty form and verify that an error message about the required fields appears. Test passed.
+3: Try to submit the form with an invalid email address and verify that a relevant error message appears. Test Failed.
+4: Try to submit the form with all inputs valid and verify that a success message appears. Test Passed.
+
 
 You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 

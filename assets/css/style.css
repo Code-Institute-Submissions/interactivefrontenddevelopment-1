@@ -1,5 +1,5 @@
 body {
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 .starter-template {
   padding: 3rem 1.5rem;
@@ -9,26 +9,31 @@ body {
 body, html {
   height: 100%;
   margin: 0;
-   background-color: #222422;
+  /* background-color: #1F2833;*/
+   background-image: url("/assets/images/city.jpg");
+   background-size: 80%;
 }
 
 .bg {
   /* The image used for the background */
-  background-image: url("/assets/images/city.jpg");
-
+  /*background-image: url("/assets/images/city.jpg");*/
   /* Full height */
   height: 60%; 
-
   /* Center and scale the image */
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: repeat-y;
   background-size: cover;
 
 }
 
+
 .jumbotron {
-  background-color: #323544;
+  
+  /*background-color: #1F2833;*/
   background-size: cover;
+  border-radius: 0px;
+
+  
 }
 
 .container {
@@ -40,14 +45,14 @@ body, html {
 }
 
 .container-fluid {
-background: #323544;
+background-image: url("/assets/images/rain.jpg");
 display: table;
 table-layout: fixed;
 width: 100%;
 overflow: hidden;
-border-radius: 20px;
+border-radius: 0px;
 margin-top: 20px;
-margin-bottom: 50px;
+margin-bottom: 0px;
 padding-right: 0px;
 padding-left: 0px;
 }
@@ -66,16 +71,6 @@ padding: 0px;
 
 }
 
-/*.rowsettings {
-    padding: 10px;
-    
-}
-
-.rowsettingsdark {
-    padding: 10px; 
-   
-}*/
-
 
 .table td, .table th {
     padding: 20px;
@@ -83,7 +78,7 @@ padding: 0px;
     border-top: 0px;
     border-bottom: 0px;
     text-align: center;
-    color: white;
+    color: #000000;
     
 }
 
@@ -167,7 +162,7 @@ border-radius: 1rem;
 
 form {
   width: 500px;
-  background: white;
+  
   padding: 20px 25px;
   margin: auto;
   margin-top: 30px;
@@ -191,8 +186,10 @@ form button {
   color: white;
 }
 form label {
-  color: #777;
-  font-size: 11px;
+    text-align: center;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
   margin-bottom: 2px;
   display: block;
 }
@@ -247,5 +244,13 @@ a { text-decoration: none }
 
 .weathericon img{
 font-size: 60px;
+} 
+
+.textcolor{
+    
+    color: rgba(255,255,255,.5)!important;
 }
 
+.htmllilnks {
+    color: #000000
+}

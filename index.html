@@ -10,7 +10,7 @@
 	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="assets/css/jquery.animatedheadline.css" />
-
+<script src="https://kit.fontawesome.com/e6035afc3e.js" crossorigin="anonymous"></script>
 	<title>Weather Forecast</title>
 </head>
 <!-- Head End -->
@@ -20,9 +20,9 @@
 <body>
 	<!-- Navbar Start -->
 	<div>
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top n">
 			<!-- Top logo link-->
-			<a class="navbar-brand" href="index.html">Weather Forecast</a>
+			<a class="navbar-brand" href="index.html"><i class="fas fa-cloud-sun-rain fa-2x"> Weather</i></a>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation" >
           <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@
 
 			<!-- Navbar Menu -->
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-				<ul class="navbar-nav mr-auto">
+				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active">
 						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 					</li>
@@ -113,7 +113,8 @@
 								<tbody>
 									<tr>
 										<th>
-											<div class="h_two_weatherlocation"></div>
+											<div class="h_two_weatherlocation">To see the current weather in any location, click here.</div>
+                                            
 										</th>
 									</tr>
 								</tbody>
@@ -245,9 +246,12 @@
 					<div class="card-body text-center mb-3">
 						<!-- Title -->
 						<h3 class="card-title h3 my-4">
-							<strong>
-                            Click "Allow Location Access" to see the weather in your area
-                            </strong>
+							
+                           <a class="htmllilnks" href="search.html"> To see the current weather in any location, click here.</a>
+                            </h3>
+                           <h3 class="card-title h3 my-4">
+                            <a class="htmllilnks" href="forecast.html">To see a 5 day forecast in any location, click here.</a>
+                            
 						</h3>
 						<div class="app-wrap"></div>
 						<!-- Jumbotron End -->
@@ -258,8 +262,8 @@
 		<!-- Main End-->
 
 <!-- Footer Start -->
-		<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-			<div class="container text-center">
+		<footer id="sticky-footer" class="py-4 bg-dark">
+			<div class="container text-center textcolor">
 				<small>Copyright &copy; Weather Forecast 2020</small>
 			</div>
 		</footer>
