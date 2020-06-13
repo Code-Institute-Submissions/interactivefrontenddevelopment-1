@@ -30,19 +30,36 @@ function displayResults (forecast) {
     city.innerText = `${forecast.city.name}, ${forecast.city.country}`;
 
     let day1 = document.querySelector('.forecast .day1');
-    day1.innerText = `${forecast.list[6].dt_txt}, ${forecast.list[6].main.temp}, ${forecast.list[6].weather[0].description} `;
+    day1.innerText = ` \n ${Math.round(forecast.list[6].main.temp)}°C, \n ${forecast.list[6].weather[0].description} \n `;
 
     let day2 = document.querySelector('.forecast .day2');
-    day2.innerText = `${forecast.list[14].dt_txt}, ${forecast.list[14].main.temp}, ${forecast.list[14].weather[0].description} `;
+    day2.innerText = ` \n ${Math.round(forecast.list[14].main.temp)}°C, \n ${forecast.list[14].weather[0].description} \n `;
 
     let day3 = document.querySelector('.forecast .day3');
-    day3.innerText = `${forecast.list[22].dt_txt}, ${forecast.list[22].main.temp}, ${forecast.list[22].weather[0].description} `;
+    day3.innerText = ` \n ${Math.round(forecast.list[22].main.temp)}°C, \n ${forecast.list[22].weather[0].description} \n `;
 
     let day4 = document.querySelector('.forecast .day4');
-    day4.innerText = `${forecast.list[30].dt_txt}, ${forecast.list[30].main.temp}, ${forecast.list[30].weather[0].description} `;
+    day4.innerText = ` \n ${Math.round(forecast.list[30].main.temp)}°C, \n ${forecast.list[30].weather[0].description} \n `;
 
     let day5 = document.querySelector('.forecast .day5');
-    day5.innerText = `${forecast.list[38].dt_txt}, ${forecast.list[38].main.temp}, ${forecast.list[38].weather[0].description} `;
+    day5.innerText = ` \n ${Math.round(forecast.list[38].main.temp)}°C, \n ${forecast.list[38].weather[0].description} \n `;
+
+    let date1 = document.querySelector('.date1');
+    date1.innerText = `${forecast.list[6].dt_txt}, \n`;
+
+    let date2 = document.querySelector('.date2');
+    date2.innerText = `${forecast.list[14].dt_txt}, \n`;
+
+    let date3 = document.querySelector('.date3');
+    date3.innerText = `${forecast.list[22].dt_txt}, \n`;
+
+    let date4 = document.querySelector('.date4');
+    date4.innerText = `${forecast.list[30].dt_txt}, \n`;
+
+    let date5 = document.querySelector('.date5');
+    date5.innerText = `${forecast.list[38].dt_txt}, \n`;
+
+   
 
     /* Get icons from Openweather API */
 
