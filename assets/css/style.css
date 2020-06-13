@@ -17,14 +17,13 @@ body {
 body, html {
   height: 100%;
   margin: 0;
-  /* background-color: #1F2833;*/
-   background-image: url("/assets/images/city.jpg");
+  
+   background-image: url("interactivefrontenddevelopment/assets/images/city.jpg");
    background-size: 80%;
 }
 
 .bg {
-  /* The image used for the background */
-  /*background-image: url("/assets/images/city.jpg");*/
+  
   /* Full height */
   height: 60%; 
   /* Center and scale the image */
@@ -37,7 +36,7 @@ body, html {
 
 .jumbotron {
   
-  /*background-color: #1F2833;*/
+  
   background-size: cover;
   border-radius: 0px;
 
@@ -53,7 +52,7 @@ body, html {
 }
 
 .container-fluid {
-background-image: url("/assets/images/rain.jpg");
+background-image: url("interactivefrontenddevelopment/assets/images/rain.jpg");
 display: table;
 table-layout: fixed;
 width: 100%;
@@ -67,7 +66,7 @@ padding-left: 0px;
 
 /* Background for jumbotron */
 .frontbackground {
-    background-image: url("/assets/images/rain.jpg");
+    background-image: url("interactivefrontenddevelopment/assets/images/rain.jpg");
 
 }
 
@@ -207,10 +206,7 @@ form label {
 
 *, ::after, ::before { box-sizing: border-box } 
 
-html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
-}
+
 
 
 .animation-type, .title h1 {

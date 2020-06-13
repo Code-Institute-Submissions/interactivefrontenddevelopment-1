@@ -49,8 +49,8 @@ function displayResults (weather) {
    weatherIcon.innerText = `${weather.weather[0].icon}`; 
 
    let weatherIcon2 = document.querySelector(".weathericon2");
-  weatherIcon2.innerText = "http://openweathermap.org/img/w/" + weatherIcon + ".png";
-$(".weathericon2").html("<img src='http://openweathermap.org/img/wn/" + weather.weather[0].icon + "@2x.png' alt='Icon depicting current weather.'>"); 
+  weatherIcon2.innerText = "https://openweathermap.org/img/w/" + weatherIcon + ".png";
+$(".weathericon2").html("<img src='https://openweathermap.org/img/wn/" + weather.weather[0].icon + "@2x.png' alt='Icon depicting current weather.'>"); 
 
 
 /* Convert unix timestamp to readable time/date */

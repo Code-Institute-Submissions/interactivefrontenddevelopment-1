@@ -9,9 +9,9 @@
 	<link href="assets/css/style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-	<script type="text/javascript">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+	<script>
 		(function(){
       emailjs.init("user_l0VrxRy6jOgDnR1SV1KpH");
    })();
@@ -71,7 +71,8 @@
 										<label>Name</label>
 										<input type="text" name="from_name" class="form-control" id="from_name" placeholder="Name" required/>
 										<label>Enter your Message</label>
-										<input type="text" rows="5" name="message" class="form-control" id="message" placeholder="Message" required/>
+                                        <!-- <input type="text" rows="5" name="message" class="form-control" id="message" placeholder="Message" required/>  -->
+										<input type="text" name="message" class="form-control" id="message" placeholder="Message" required/>
 										<br><br>
 										<button type="submit" class="btn btn-secondary center-block">
                                         Contact Us
