@@ -39,6 +39,8 @@ Whenever it is feasible, prefer to automate your tests, and if you've done so, p
 
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
+
+
 Contact form:
 1: Go to the "Contact Us" page
 2: Try to submit the empty form and verify that an error message about the required fields appears. Test passed.
@@ -46,12 +48,21 @@ Contact form:
 4: Try to submit the form with all inputs valid and verify that a success message appears. Test Passed.
 
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 Deployment
 Website is deployed to Github
+Deploying to GitHub Pages is automatic. Once it’s set up, deploying happens whenever you push your local changes to your remote, GitHub-hosted repository. 
+
+You can view the project by navigating in your browser to the URL https://eezipc.github.io/interactivefrontenddevelopment/
+
+How it was deployed
+In GitHub, I navigated to my eezipc.github.io repository and clicked Settings.
+
+Within Settings, I navigated to the Source section within the Github Pages section. From the dropdown menu, I selected master branch and then clicked Save. 
+
+Deploying new changes is easy. Every time I make a change to site site, I use git commit and git push to send the changes to GitHub. After this, the GitHub site should update within a few seconds. 
+
 
 Credits
 Email form is from www.emailjs.com
