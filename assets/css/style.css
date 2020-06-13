@@ -18,7 +18,7 @@ body, html {
   height: 100%;
   margin: 0;
   
-   background-image: url("../assets/images/city.jpg");
+   background-image: url("../images/city.jpg");
    background-size: 80%;
 }
 
@@ -52,7 +52,7 @@ body, html {
 }
 
 .container-fluid {
-background-image: url("../assets/images/rain.jpg");
+background-image: url("../images/rain.jpg");
 display: table;
 table-layout: fixed;
 width: 100%;
@@ -66,7 +66,7 @@ padding-left: 0px;
 
 /* Background for jumbotron */
 .frontbackground {
-    background-image: url("../assets/images/rain.jpg");
+    background-image: url("../images/rain.jpg");
 
 }
 
