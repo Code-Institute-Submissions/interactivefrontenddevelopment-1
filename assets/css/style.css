@@ -53,6 +53,7 @@ body, html {
 
 .container-fluid {
 background-image: url("../images/rain.jpg");
+filter: brightness(150%);
 display: table;
 table-layout: fixed;
 width: 100%;
@@ -62,6 +63,7 @@ margin-top: 20px;
 margin-bottom: 0px;
 padding-right: 0px;
 padding-left: 0px;
+
 }
 
 /* Background for jumbotron */
