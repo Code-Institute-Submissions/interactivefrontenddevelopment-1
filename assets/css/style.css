@@ -139,7 +139,7 @@ padding: 0px;
 .weatherheading {
     
     text-decoration: underline;
-    font-weight: 900;
+    text-shadow: 1px 1px #000000;
 }
 
 .fivedayforecast {
@@ -268,4 +268,34 @@ font-size: 60px;
     width: 100%;
     padding-right: 5px;
     padding-left: 5px;
+}
+
+.date1 {
+    
+    text-decoration: underline;
+    text-shadow: 1px 1px #000000;
+}
+
+.date2 {
+    
+    text-decoration: underline;
+   text-shadow: 1px 1px #000000;
+}
+
+.date3 {
+    
+    text-decoration: underline;
+    text-shadow: 1px 1px #000000;
+}
+
+.date4 {
+    
+    text-decoration: underline;
+    text-shadow: 1px 1px #000000;
+}
+
+.date5 {
+    
+    text-decoration: underline;
+    text-shadow: 1px 1px #000000;
 }
