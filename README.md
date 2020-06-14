@@ -33,12 +33,10 @@ JQuery
 
 
 Testing
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
-
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
+Tested html here https://validator.w3.org/
+Tested css here https://jigsaw.w3.org/css-validator/
+Tested for javascript errors here https://seositecheckup.com/ and here https://www.seoptimer.com/ as well as google console tools.
+I also checked code here https://jshint.com/
 
 
 Contact form:
@@ -68,3 +66,4 @@ Credits
 Email form is from www.emailjs.com
 Text animation is from https://www.jqueryscript.net/rotator/CSS3-Animated-Headline-Rotator-Plugin-jQuery-animatedHeadline.html
 Images are from www.pexels.com
+Fonts are from www.fontawesome.com
